@@ -7,8 +7,9 @@
     "test": "test"
   },
   "scripts": {
-    "test": "jest --coverage"
-  },
+    "test": "jest",
+    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
+    },
   "author": "",
   "license": "ISC",
   "dependencies": {
